@@ -1,0 +1,135 @@
+/* Importing Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,800,700,400);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+
+/* Background Image*/
+
+html {
+    background: url(../images/world.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -webkit-font-smoothing: antialiased;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header,
+a,
+img,
+li {
+    -moz-transition: all 1000ms ease;
+    -webkit-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Basic layout */
+
+body {
+    background-color: #ebebeb;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar */
+
+nav {
+    min-width: 1000px;
+    margin: 0 auto;
+}
+header {
+    float: left;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+header a {
+    color: #8e8e8e;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    line-height: 40px;
+}
+header a.active,
+header a:hover {
+    color: white;
+}
+header ul {
+    margin-right: 80px;
+    list-style-type: none;
+    float: right
+}
+header li {
+    margin-right: 10px;
+    display: inline;
+    float: left;
+}
+li.separator {
+    color: #8e8e8e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    padding: 0;
+    padding-left: 10px;
+    line-height: 40px;
+}
+
+/* Large navi bar */
+
+header.large {
+    height: 120px;
+    background: rgba(31, 31, 31, 0.75);
+    /*shadow effect*/
+    
+    -webkit-box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+    -moz-box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+    box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+}
+header.large img {
+    width: 260px;
+    margin: 15px 0 0 100px;
+}
+header.large li {
+    margin-top: 25px;
+}
+/* Small navi bar*/
+
+header.small {
+    height: 50px;
+    background-color: #1F1F1F;
+    /*shadow effect*/
+    
+    -webkit-box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+    -moz-box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+    box-shadow: 0px 4px 6px rgba(100, 100, 100, 0.5);
+}
+header.small img {
+    width: 110px;
+    margin: 8px 0 0 100px;
+}
+header.small li {
+    margin-top: -10px;
+}
+
+/* Home Section */
+
+#home {
+    margin: 50px 0 0 0;
+    float: left;
+    min-width: 1400px;
+    height: 100vh;
+    position: relative;
+}
+
